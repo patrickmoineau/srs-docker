@@ -10,4 +10,4 @@ RUN apt install git -y
 RUN cd / && git clone https://github.com/patrickmoineau/srs.git && cd srs/trunk && ./configure && make
 RUN apt-get -qy autoremove
 RUN chmod +x /srs/run.sh
-CMD ["/bin/bash"]
+CMD ["/srs/run.sh"]
